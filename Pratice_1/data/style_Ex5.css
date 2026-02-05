@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+}
+.navbar {
+    background: #222;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    text-align: right;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+.menu a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.search {
+    margin-left: auto;
+}
+
+.search input {
+    padding: 5px;
+}
+
+.search button {
+    padding: 5px 10px;
+}
+.container {
+    background: white;
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.in-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add {
+    float: right;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background: #f5f5f5;
+}
+
+.edit {
+    background: orange;
+    border: none;
+    padding: 4px 8px;
+    color: white;
+}
+
+.delete {
+    background: rgb(255, 0, 0);
+    border: none;
+    padding: 4px 8px;
+    color: white;
+}
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-form {
+    background: white;
+    width: 400px;
+    border-radius: 4px;
+}
+
+.m-header {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.m-body {
+    padding: 15px;
+}
+.Name_Email{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Phone_Position{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row{
+    margin-bottom: 10px;
+}
+.row label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.radio-group label{
+    font-weight: normal;
+}
+.footer {
+    text-align: right;
+    padding: 10px;
+}
+
+.save {
+    background: green;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+}
+
+.cancel {
+    background: gray;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+}
