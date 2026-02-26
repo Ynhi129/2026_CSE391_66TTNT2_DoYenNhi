@@ -1,0 +1,40 @@
+body{
+    font-family: Arial;
+    background: #f4f4f4;
+}
+.container{
+    margin: 50px;
+    border: 2px solid #ccc;
+    padding: 100px;
+}
+
+.row{
+    display:flex ;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.row input,
+.row textarea{
+    flex: 1px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+textarea{
+    height: 150px;
+    resize: none;
+}
+.footer{
+    padding: 10px;  
+}
+.send{
+    background:lightskyblue;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+}
+.note{
+    display: flex;
+    justify-content: right;
+    font-size: 14px;
+    color: gray;
+}
