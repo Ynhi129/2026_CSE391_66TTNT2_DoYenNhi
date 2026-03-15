@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex2_Practice_4</title>
+    <link rel="stylesheet" href="data/Ex2.css">
+</head>
+<body>
+    <h2>Form Dang Ki</h2>
+    <form id="form">
+        <label>Ho va Ten:</label><br>
+        <input type="text" id="fullname" placeholder="Nhap ho va ten">
+        <div class="Error" id="fullnameError"></div>
+        <br>
+        <label>Email:</label><br>
+        <input type="email" id="email" placeholder="name@domain.com">
+        <div class="Error" id="emailError"></div>
+        <br>
+        <label>So dien thoai:</label><br>
+        <input type="number" id="phone" placeholder="0xxxxxxxxx">
+        <div class="Error" id="phoneError"></div>
+        <br>
+        <label>Mat khau:</label><br>
+        <input type="password" id="password">
+        <div class="Error" id="passwordError"></div>
+        <br>
+        <label>Xac minh mat khau:</label><br>
+        <input type="password" id="comfirmPasword">
+        <div class="Error" id="comfirmPaswordError"></div>
+        <br>
+        <label>Gioi tinh:</label><br>
+        <input type="radio" name="gender" value="nam">Nam
+        <input type="radio" name="gender" value="nu">Nu
+        <div class="Error" id="genderError"></div>
+        <br>
+        <label>Dieu khoan</label><br>
+        <input type="checkbox" id="terms">
+        <label>Toi dong y voi dieu khoan</label>
+        <div class="Error" id="termsError"></div>
+        <br>
+        <button type="submit">Dang Ki</button>
+    </form>
+    <div id="success" class="success"></div>
+    <script src="data/Ex2.js"></script>
+</body>
+</html>

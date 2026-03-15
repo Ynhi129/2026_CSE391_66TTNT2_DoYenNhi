@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex1_Practice_4</title>
+    <link rel="stylesheet" href="data/Ex1.css">
+</head>
+<body>
+    <h2>Quản lý điểm sinh viên</h2>
+    <div class="form">
+        <input type="text" id="name" placeholder="Họ tên">
+        <input type="number" id="score" placeholder="Điểm (0-10)" step="0.1">
+        <input type="text" id="searchInput" placeholder="Tim sinh vien...">
+        <button id="addBtn">Thêm</button>
+    </div>
+    <select id="filterRank">
+        <option value="all">Tat ca</option>
+        <option value="Gioi">Gioi</option>
+        <option value="Kha">Kha</option>
+        <option value="Trung binh">Trung binh</option>
+        <option value="Yeu">Yeu</option>
+    </select>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Họ tên</th>
+                <th>Điểm</th>
+                <th>Xếp loại</th>
+                <th>Thao tác</th>
+                <th id="scoreHeader">Diem</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+    <p id="stats">Tổng SV: 0 | Điểm trung bình: 0</p>
+    <script src="data/Ex1.js"></script>
+</body>
+</html>

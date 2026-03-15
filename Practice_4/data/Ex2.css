@@ -1,0 +1,18 @@
+body{
+    font-family: Arial;
+    margin: 150px;
+    /* border: 1px solid #cec7c7; */
+    padding: 10px;
+}
+h2{
+    text-align: center;
+}
+.form{
+    margin-bottom: 20px;
+}
+.Error{
+    color: red;
+}
+.succes{
+    color: green;
+}
