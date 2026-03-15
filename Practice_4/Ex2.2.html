@@ -9,26 +9,37 @@
     <h2>FORM DAT HANG</h2>
     <form id="order-form">
         <label>Ten san pham:</label><br>
-        <input type="text" id="name" placeholder="Nhap ten san pham">
+        <input type="text" id="product" placeholder="Nhap ten san pham">
+        <span class="error" id="productError"></span>
         <br>
         <label>So luong:</label><br>
-        <input type="number" id="number">
+        <input type="number" id="quantity">
+        <span class="error" id="quantityError"></span>
         <br>
         <label>Ngay giao hang:</label><br>
         <input type="date" id="date">
+        <span class="error" id="dateError"></span>
         <br>
         <label for="">Dia chi giao hang</label><br>
         <input type="text" id="address">
+        <span class="error" id="addressError"></span>
         <br>
         <label>Ghi chu</label><br>
         <input type="text" id="note">
+        <div id="charCount">0/200</div>
+        <span class="error" id="noteError"></span>
         <br>
         <label>Phuong thuc thanh toan:</label><br>
         <input type="radio" name="payment" id="cod">COD
-        <input type="radio" name="payment" id="Ck">Chuyen khoan
+        <input type="radio" name="payment" id="bank">Chuyen khoan
         <input type="radio" name="payment" id="Vidientu">Vi Dien Tu
-    </form>
+        <span class="error" id="paymentError"></span>
 
+        <h3>Tong tien: <span id="total">0</span> VND</h3>
+
+        <button type="submit">Dat hang</button>
+    </form>
+    <div id="confirmBox"></div>
     <script src="data/Ex2.js"></script>
 </body>
 </html>

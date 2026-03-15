@@ -8,7 +8,7 @@ const terms = document.getElementById("terms");
 
 const success = document.getElementById("success");
 
-// ===== HÀM HIỂN THỊ LỖI =====
+//ham hien thi loi
 
 function showError(fieldId, message){
     document.getElementById(fieldId + "Error").textContent = message;
@@ -18,14 +18,14 @@ function clearError(fieldId){
     document.getElementById(fieldId + "Error").textContent = "";
 }
 
-// ===== VALIDATE FULLNAME =====
+//validate fullname
 
 function validateFullname(){
     const value = fullname.value.trim();
     const regex = /^[A-Za-zÀ-ỹ\s]{3,}$/;
 
     if(!regex.test(value)){
-        showError("fullname","Tên ≥ 3 ký tự và chỉ chứa chữ");
+        showError("fullname","Ten ≥ 3 ki tu va chi chua chu");
         return false;
     }
 
@@ -33,14 +33,14 @@ function validateFullname(){
     return true;
 }
 
-// ===== VALIDATE EMAIL =====
+//validate email
 
 function validateEmail(){
     const value = email.value.trim();
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if(!regex.test(value)){
-        showError("email","Email không hợp lệ");
+        showError("email","Email khong hop le");
         return false;
     }
 
@@ -48,14 +48,14 @@ function validateEmail(){
     return true;
 }
 
-// ===== VALIDATE PHONE =====
+//validate phone
 
 function validatePhone(){
     const value = phone.value.trim();
     const regex = /^0\d{9}$/;
 
     if(!regex.test(value)){
-        showError("phone","SĐT phải 10 số và bắt đầu bằng 0");
+        showError("phone","Sdt phai 10 so va bat dau bang so 0");
         return false;
     }
 
@@ -63,14 +63,14 @@ function validatePhone(){
     return true;
 }
 
-// ===== VALIDATE PASSWORD =====
+//validate password
 
 function validatePassword(){
     const value = password.value;
     const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
 
     if(!regex.test(value)){
-        showError("password","Mật khẩu ≥8 ký tự, có chữ hoa, chữ thường và số");
+        showError("password","Mat khau >=8 ki tu, co chu hoa, chu thuong va so");
         return false;
     }
 
@@ -78,12 +78,12 @@ function validatePassword(){
     return true;
 }
 
-// ===== VALIDATE CONFIRM PASSWORD =====
+//comfirm password
 
 function validateConfirmPassword(){
 
     if(confirmPassword.value !== password.value){
-        showError("confirmPassword","Mật khẩu không khớp");
+        showError("confirmPassword","Mat khau khong khop");
         return false;
     }
 
@@ -91,13 +91,13 @@ function validateConfirmPassword(){
     return true;
 }
 
-// ===== VALIDATE GENDER =====
+//gender
 
 function validateGender(){
     const gender = document.querySelector('input[name="gender"]:checked');
 
     if(!gender){
-        showError("gender","Vui lòng chọn giới tính");
+        showError("gender","Vui long chon gioi tinh");
         return false;
     }
 
@@ -105,20 +105,19 @@ function validateGender(){
     return true;
 }
 
-// ===== VALIDATE TERMS =====
+//terms
 
 function validateTerms(){
 
     if(!terms.checked){
-        showError("terms","Bạn phải đồng ý điều khoản");
+        showError("terms","Ban phai dong y dieu khoan nay");
         return false;
     }
 
     clearError("terms");
     return true;
 }
-
-// ===== SUBMIT =====
+//submit
 
 form.addEventListener("submit", function(e){
 
@@ -138,14 +137,14 @@ form.addEventListener("submit", function(e){
         form.style.display = "none";
 
         success.textContent =
-        "Đăng ký thành công! " + fullname.value;
+        "Dang ki thanh cong! " + fullname.value;
 
     }
 
 });
 
 
-// ===== BLUR VALIDATE =====
+//bur validate
 
 fullname.addEventListener("blur", validateFullname);
 email.addEventListener("blur", validateEmail);
@@ -154,7 +153,7 @@ password.addEventListener("blur", validatePassword);
 confirmPassword.addEventListener("blur", validateConfirmPassword);
 
 
-// ===== INPUT CLEAR ERROR =====
+//input
 
 fullname.addEventListener("input", ()=>clearError("fullname"));
 email.addEventListener("input", ()=>clearError("email"));
